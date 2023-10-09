@@ -2,22 +2,33 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [counter, setCounter] = useState(15);
+  const [counter, setCounter] = useState(0);
 
 
 //  let counter = 5  
 
+
+
  const addValue = ()=>{
-   console.log('Clicked')
-   setCounter(counter + 1);
+   if(counter <= 19){
+     setCounter(counter + 1);
+
+   }else{
+    addValue.disable
+   }
  }
 
+
  const removeValue = () =>{
-  setCounter(counter -1);
+  if(counter >= 1){
+    setCounter(counter -1);
+  }else{
+    setCounter.disable
+  }
  }
   return (
    <>
-   <h1>Chai aur React</h1>
+   <h1>Chai aur React 🚀</h1>
    <h2>Counter Value: {counter} </h2>
 
     {/* ADDING VALUE DYNAMICALLY  */}
