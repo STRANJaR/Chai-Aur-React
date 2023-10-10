@@ -24,7 +24,7 @@ function App() {
     setCounter(counter -1);
   }else{
     setCounter.disable
-  }
+   } 
  }
   return (
    <>
