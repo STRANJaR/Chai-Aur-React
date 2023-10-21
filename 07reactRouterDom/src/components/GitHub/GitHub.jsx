@@ -23,13 +23,13 @@ function GitHub() {
         {data.name}
       </h1>
      
-      <div className="relative text-lg text-white">
+      <div className="relative  text-white">
         Bio: {data.bio}
       </div>
       
     </div>
     <div className="flex items-baseline my-6">
-      <div className="space-x-3 flex text-sm font-medium">
+      <div className="space-x-3 flex text-sm font-medium  text-white bg-teal-700 p-2 rounded transition  m-4" >
        Public Repo: {data.public_repos} || Followers: {data.followers} || Location: {data.location} || Twitter: {data.twitter_username} 
       </div>
     </div>
