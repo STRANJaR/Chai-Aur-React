@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react'
+import  {useState, useContext} from 'react'
 import UserContext  from '../Context/UserContext'
 
 function Login() {
@@ -9,14 +9,27 @@ function Login() {
 
     const handleSubmit = (e) =>{
         e.preventDefault()
-        setUser
+        setUser({username, password})
         
     }
   return (
     <div>
         <h2>Login</h2>
-        <input type="text" placeholder='usename' />
-        <input type="text" placeholder='password' />
+        <input
+         type="text"
+          placeholder='usrename'
+          value={username}
+           onChange={(e)=> setUsername(e.target.value)}
+           />
+
+
+        <input 
+        type="text"
+        value={password}
+        onChange={(e)=> setPassword(e.target.value)}
+         placeholder='password'
+          />
+          
         <button onClick={handleSubmit}>submit</button>
         
     </div>
