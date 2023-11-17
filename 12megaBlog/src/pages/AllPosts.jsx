@@ -5,14 +5,14 @@ import { useNavigate } from 'react-router-dom'
 
 function AllPosts() {
     const [post, setPost] = useState([])
-    useEffect(() => {
+    // useEffect(() => {
         appwriteService.getPost([])
         .then((posts) => {
             if(posts) {
-                setPost(posts)
+                setPost(posts.documents)
             }
         })
-    }, [])
+    // }, [])
   return (
     <div className='w-full py-8'>
 

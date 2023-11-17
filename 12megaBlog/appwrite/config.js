@@ -82,7 +82,7 @@ export class Service{
                 conf.appwriteCollectionId,
                 slug
             )
-            return true;
+            
 
         } catch (error) {
             throw error
