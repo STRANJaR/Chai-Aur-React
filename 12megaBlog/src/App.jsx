@@ -16,7 +16,7 @@ function App() {
   authService.getCurrentUser()
   .then((userData)=>{
     if(userData){
-      dispatch(login(userData))
+      dispatch(login({userData})) 
     }else{
       dispatch(logout())
     }
@@ -30,7 +30,7 @@ function App() {
       <div className='w-full block'>
         <Header  />
         <main>
-          <Outlet />
+        TODO: <Outlet />
         </main>
         <Footer />
       </div>
